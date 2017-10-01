@@ -1,6 +1,6 @@
 // tested with gradle 4.0
 plugins {
-    id 'java'
+    id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
     id 'jacoco'
     id 'org.sonarqube' version "2.5"
 }
@@ -10,7 +10,9 @@ repositories {
 }
 
 dependencies {
-    compile 'junit:junit:4.12'
+    // spock
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.12' // in some cases this line is required...
 }
 
 jacocoTestReport {

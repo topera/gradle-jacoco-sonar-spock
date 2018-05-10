@@ -23,4 +23,4 @@ Tech Stack
 * Spock 1.1
 * Groovy 2.4.12
 
-To take a look in other tutorials, please see https://github.com/topera/hello-world-index
+To take a look in other projects, please see https://github.com/topera/index

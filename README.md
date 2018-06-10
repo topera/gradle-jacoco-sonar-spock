@@ -16,6 +16,8 @@ Test with SonarCloud
 * $ gradle sonarqube -Dsonar.login=a72955e0d........
 * Your source code will be sent to SonarCloud and in few seconds you can check the result in
     * https://sonarcloud.io/organizations/topera-github // replace 'topera-github' here with your organization name
+* Important: if you create an environment variable called SONAR_TOKEN will NOT solve your authentication problem.
+    * This variable is read by Travis-CI not by Gradle or Sonar.
 
 Tech Stack
 * IntelliJ IDEA 2016.1.4
